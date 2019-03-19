@@ -1,0 +1,167 @@
+#container {
+    width: 400px;
+    height: 300px;
+    display: block;
+    float: none;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(white, rgb(41,171,226), rgb(74,139,209));
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+
+.iconColumn {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin: 22px 10px 2px 10px;
+    text-align: center;
+}
+
+.currentWeatherIcon {
+    margin: 0 auto;
+    align-content: center;
+    margin-bottom: 5px;
+}
+
+.currentWeatherTitle {
+    color: white;
+    background: rgb(74,139,209);
+    border-radius: 0px 5px 5px 0px;
+    font-size: 14px;
+    width: 89%;
+    height: 19px;
+    margin-top: -9px;
+    margin-left: -10px;
+    padding-top:  3px;
+    padding-left: 4px;
+}
+
+.currentImg{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img{
+    width: 137px;
+    margin-top: -25px;
+    margin-bottom: -23px;
+}
+
+.currentTemp{
+    font-size: 30px;
+    margin: -9px;
+}
+
+.currentSummary{
+    font-size: 12px;
+}
+
+.feelAndHumidity{
+    margin-top: 2px;
+    text-align: left;
+}
+
+.feelsLike {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.humidity {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.description {
+    padding: 5px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
+
+.timeDateUpdate {
+    margin-top: 5px;
+    display: inline-block;
+    margin: auto;
+}
+
+.refresh-btn{  
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    align-items: center;
+    border: none;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 1px 1px;
+    float: right;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.clockContainer {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
+
+.clock {
+    font-size: 40px;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.daySummary {
+    text-align: left;
+    width: 90%;
+    font-size: 11px;
+    padding: 0px;
+}
+
+table{
+    color: white;
+    margin: 0 auto;
+    border-spacing: 10px 0px;
+    margin-top: 5px;
+}
+
+th {
+    font-weight: 400;
+}
+
+td{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.forcastedIcon {
+    margin-top: -8px;
+}
+
+.hi-lo-text {
+    font-size: 8px;
+    text-align: center;
+    margin: 0;
+    margin-left: -5px;
+}
+
+.hi-lo{
+    text-align: center;
+} 
