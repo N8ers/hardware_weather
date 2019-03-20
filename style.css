@@ -20,6 +20,8 @@
 }
 
 .iconColumn {
+    /* height is temporary */
+    height: 150px;
     border-radius: 10px;
     background-color: white;
     color: black;
@@ -145,6 +147,9 @@ th {
 }
 
 td{
+    /* height and width are tempory */
+    height: 90px;
+    width: 65px;
     color: black;
     background-color: white;
     border-radius: 10px;
