@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
     function time() {
         document.getElementById('time').textContent = moment().format("h:mm a");
         document.getElementById('date').textContent = moment().format("MMMM Do, YYYY");
-        let updateTime = setTimeout(time, 500)
+        let updateTime = setTimeout(time, 1000)
     }
     time()
 
@@ -86,10 +86,11 @@ window.addEventListener('load', () => {
                 }
 
                 document.getElementById('currentIcon').childNodes[0].className += "img";
+                document.getElementById('lastUpdate').innerHTML = moment().format("h:mm a");
                 console.log("i updated")
             })
 
-        let updateWeather = setTimeout(getWeather, 900000)
+        let updateWeather = setTimeout(getWeather, 300000)
     }
     getWeather()
     // current

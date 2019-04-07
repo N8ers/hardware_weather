@@ -21,7 +21,7 @@
 
 .iconColumn {
     /* height is temporary */
-    height: 150px;
+    height: 143px;
     border-radius: 10px;
     background-color: white;
     color: black;
@@ -94,6 +94,16 @@
     margin-top: 5px;
     display: inline-block;
     margin: auto;
+}
+
+.update-container {
+    display: flex;
+    margin: auto;
+}
+
+.lastUpdate {
+    font-size: 8px;
+    color: black;
 }
 
 .refresh-btn{  
