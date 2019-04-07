@@ -12,5 +12,6 @@ raspberry pi! Checkout the github link below to learn more!
 
 -- voilà! Nice work! You should have a weather app running on your computer!
 
-#install for Raspberry Pi
+
+# install for Raspberry Pi
 Electron seems to butt heads with Raspbian OS - A long form tutorial will be coming soon!
