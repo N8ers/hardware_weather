@@ -4,7 +4,7 @@ This is a simple weather app, with a fun twist! Using Fetch API to get Data from
 background of you desktop, auto fetching the weather ever 15 minutes. If you want an extra challenge, you can make it run on a 
 raspberry pi! Checkout the github link below to learn more!
 
-If you just wanna take a sneak peak in the browser click here... http://sheryak-weather.surge.sh/
+
 
 # install for laptop/desktop
 - clone the repo
