@@ -1,9 +1,14 @@
+body{
+    background: linear-gradient(rgb(74,139,209), rgb(41,171,226), white);
+    height: 95vh;
+}
+
 #container {
     width: 400px;
     height: 300px;
     display: block;
     float: none;
-    margin: 0 auto;
+    margin: 10px auto;
     border: 1px solid black;
     border-radius: 10px;
     background: linear-gradient(white, rgb(41,171,226), rgb(74,139,209));
@@ -20,7 +25,6 @@
 }
 
 .iconColumn {
-    /* height is temporary */
     height: 143px;
     border-radius: 10px;
     background-color: white;
@@ -157,7 +161,6 @@ th {
 }
 
 td{
-    /* height and width are tempory */
     height: 90px;
     width: 65px;
     color: black;
