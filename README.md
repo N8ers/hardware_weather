@@ -8,6 +8,7 @@ raspberry pi! Checkout the github link below to learn more!
 
 # install for laptop/desktop
 - clone the repo
+- run 'npm install'
 - change the lat/lng on line 13 in app.js
   ex) fetch(`https://api.darksky.net/forecast/e20fe780791cad1d4d4d7b8484f970a5/YOURLAT,YOURLNG`)
 - run the command 'npm run start'
