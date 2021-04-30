@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 
 <head>
-    <title>weatherApp</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500" rel="stylesheet">
+  <title>weatherApp</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500" rel="stylesheet">
 </head>
 
 <body>
-    
-    <div id="container">
-        <div class="row">
-            <!-- icon -->
-            <div class="column iconColumn">
-                <div class="currentWeatherIcon">
-                    <div class="currentWeatherTitle">CURRENT WEATHER</div>
-                    <div class="currentImg">
-                        <span class="img" id="currentIcon"></span>
-                    </div>
+  <div id="container">
+    <div class="row">
+      <!-- icon -->
+      <div class="column iconColumn">
+        <div class="currentWeatherIcon">
+          <div class="currentWeatherTitle">CURRENT WEATHER</div>
+          <div class="currentImg">
+            <span class="img" id="currentIcon"></span>
+          </div>
 
-                    <div class="row">
-
-                        <div class="column">
-                            <div class="currentTemp"><span id="currentTemp"></span>&deg;F</div>
-                            <div id="currentSummary" class="currentSummary"></div>
-                        </div>
-                        <div class="column feelAndHumidity">
-                            <div class="feelsLike">Feels like <span id="currentFeelLike"></span>&deg; F</div>
-                            <div class="humidity">Humidity <span id="currentHumidity"></span>%</div>
-                        </div>
-                    </div>
-                </div>
+          <div class="row">
+            <div class="column">
+              <div class="currentTemp"><span id="currentTemp"></span>&deg;F</div>
+              <div id="currentSummary" class="currentSummary"></div>
             </div>
-
-            <!-- descriptions -->
-            <div class="column description">
-
-                <div class="timeDateUpdate">
-                    <div class="update-container">
-                        <h5 class="lastUpdate">Last Update: <span id="lastUpdate"></span></h5>
-                        <button class="refresh-btn" onClick="window.location.reload()">Update</button>
-                    </div>
-                    <div class="clockContainer">
-                        <div class="clock" id="time">0:00 am </div>
-                    </div>
-                    <div class="date" id="date">
-                    </div>
-                    <p id="dailySummary" class="daySummary">
-                    </p>
-                </div>
+            <div class="column feelAndHumidity">
+              <div class="feelsLike">Feels like <span id="currentFeelLike"></span>&deg; F</div>
+              <div class="humidity">Humidity <span id="currentHumidity"></span>%</div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- table -->
-        <table>
-            <th>TODAY</th>
-            <th>
-                <span id="dayTwo"></span>
-            </th>
-            <th>
-                <span id="dayThree"></span>
-            </th>
-            <th>
-                <span id="dayFour"></span>
-            </th>
-            <th>
-                <span id="dayFive"></span>
-            </th>
-            <tr>
-                <td>
-                    <span id="todayIcon"></span>
-                    <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
-                    <div class="hi-lo"><span id="todayHi"></span>&deg;|<span id="todayLo"></span>&deg;</div>
-                </td>
-                <td>
-                    <span id="dayTwoIcon"></span>
-                    <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
-                    <div class="hi-lo"><span id="dayTwoHi"></span>&deg;|<span id="dayTwoLo"></span>&deg;</div>
-                </td>
-                <td>
-                    <span id="dayThreeIcon"></span>
-                    <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
-                    <div class="hi-lo"><span id="dayThreeHi"></span>&deg;|<span id="dayThreeLo"></span>&deg;</div>
-                </td>
-                <td>
-                    <span id="dayFourIcon"></span>
-                    <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
-                    <div class="hi-lo"><span id="dayFourHi"></span>&deg;|<span id="dayFourLo"></span>&deg;</div>
-                </td>
-                <td>
-                    <span id="dayFiveIcon"></span>
-                    <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
-                    <div class="hi-lo"><span id="dayFiveHi"></span>&deg;|<span id="dayFiveLo"></span>&deg;</div>
-                </td>
-
-            </tr>
-        </table>
+      <!-- descriptions -->
+      <div class="column description">
+        <div class="timeDateUpdate">
+          <div class="update-container">
+            <h5 class="lastUpdate">Last Update: <span id="lastUpdate"></span></h5>
+            <button class="refresh-btn" onClick="window.location.reload()">Update</button>
+          </div>
+          <div class="clockContainer">
+              <div class="clock" id="time">0:00 am </div>
+          </div>
+          <div class="date" id="date"></div>
+          <p id="dailySummary" class="daySummary"></p>
+        </div>
+      </div>
     </div>
 
-    <script src="app.js"></script>
+    <!-- table -->
+    <table>
+      <th>TODAY</th>
+      <th>
+        <span id="dayTwo"></span>
+      </th>
+      <th>
+        <span id="dayThree"></span>
+      </th>
+      <th>
+        <span id="dayFour"></span>
+      </th>
+      <th>
+        <span id="dayFive"></span>
+      </th>
+      <tr>
+        <td>
+          <span id="todayIcon"></span>
+          <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
+          <div class="hi-lo"><span id="todayHi"></span>&deg;|<span id="todayLo"></span>&deg;</div>
+        </td>
+        <td>
+          <span id="dayTwoIcon"></span>
+          <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
+          <div class="hi-lo"><span id="dayTwoHi"></span>&deg;|<span id="dayTwoLo"></span>&deg;</div>
+        </td>
+        <td>
+          <span id="dayThreeIcon"></span>
+          <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
+          <div class="hi-lo"><span id="dayThreeHi"></span>&deg;|<span id="dayThreeLo"></span>&deg;</div>
+        </td>
+        <td>
+          <span id="dayFourIcon"></span>
+          <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
+          <div class="hi-lo"><span id="dayFourHi"></span>&deg;|<span id="dayFourLo"></span>&deg;</div>
+        </td>
+        <td>
+          <span id="dayFiveIcon"></span>
+          <p class="hi-lo-text">high &nbsp;&nbsp;&nbsp;&nbsp; low</p>
+          <div class="hi-lo"><span id="dayFiveHi"></span>&deg;|<span id="dayFiveLo"></span>&deg;</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <script src="app.js"></script>
 </body>
 
 </html>
